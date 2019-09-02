@@ -1,0 +1,13 @@
+<h1>Buscadro {{ termino}}</h1>
+
+<div class="row">
+    <div class="col-md-12" *ngIf="heroes.length == 0">
+        <div class="alert alert-info" role="alert">
+            no hay resultados {{termino}}
+        </div>
+
+    </div>
+</div>
+<div class="card-columns">
+    <app-heroe-tarjeta [heroe]="foo" [index]="foo.idx" *ngFor="let foo of heroes"></app-heroe-tarjeta>
+</div>
